@@ -1,0 +1,9 @@
+/node_modules/
+/.npm/
+/.yarn/
+/dist/
+/build/
+.vscode/
+.idea/
+.env
+.git/
