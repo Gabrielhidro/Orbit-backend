@@ -13,7 +13,7 @@ async function seed() {
     .values([
       {
         title: 'Learn to code',
-        desiredWeeklyFrequency: 5,
+        desiredWeeklyFrequency: 3,
       },
       {
         title: 'Exercise',
@@ -21,7 +21,7 @@ async function seed() {
       },
       {
         title: 'Read',
-        desiredWeeklyFrequency: 7,
+        desiredWeeklyFrequency: 2,
       },
     ])
     .returning()
@@ -35,6 +35,10 @@ async function seed() {
     },
     {
       goalId: result[1].id,
+      createdAt: startOfWeek.toDate(),
+    },
+    {
+      goalId: result[2].id,
       createdAt: startOfWeek.toDate(),
     },
   ])
