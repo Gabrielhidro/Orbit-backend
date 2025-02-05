@@ -18,6 +18,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@fastify/cors": "^10.0.2",
     "@paralleldrive/cuid2": "github:paralleldrive/cuid2",
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.39.0",
